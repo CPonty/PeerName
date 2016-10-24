@@ -1,0 +1,19 @@
+body {
+  padding: 1em;
+}
+table {
+  margin: 0 auto;
+}
+th {
+  padding-right: 1em;
+  text-align: right;
+}
+td {
+  text-align: left;
+}
+#container {
+  margin: 0 auto;
+  max-width: 40em;
+  text-align: center;
+}
+

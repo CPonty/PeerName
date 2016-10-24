@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>WebRTC Name Generator</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <div id="container">
+    <div id="main">
+      <p>Your Peering Name:</p>
+      <div class="page-header">
+        <h1 id="name">-</h1>
+      </div>
+      <p>
+        <a href="#" id="infoBtn">What?</a> | <a href="#" id="translateBtn">Translate</a> | <a target="_blank" href="https://CPonty.github.io/PeerName">Github</a>
+      </p>
+      <br/>
+    </div>
+    <div id="info" class="hidden">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <p>Your new name is special!</p>
+          <p>To generate it, we passed your IP address through a word database.</p>
+          <p>This convention could be used in peer-to-peer web services, as an alternative to IP addresses or discovery services when initiating connections.</p>
+          <p>
+            Since the advent of <b><a href="https://en.wikipedia.org/wiki/WebRTC">WebRTC</a></b> and similar tools, 
+            ad-hoc communication services (file transfer, conference calls) can now be provided with little more than 
+            an optional signalling server to mediate connections.
+          </p>
+          <h2 id="ip"></h2>
+        </div>
+      </div>
+    </div>
+    <div id="translate" class="hidden">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <table id="table">
+            <tr>
+              <th>IP Addr</th>
+              <td><input id="ip1" name="ip1" class="ip-control" type="number" min="0" max="255" value="0" required/> . </td>
+              <td><input id="ip2" name="ip2" class="ip-control" type="number" min="0" max="255" value="0" required/> . </td>
+              <td><input id="ip3" name="ip3" class="ip-control" type="number" min="0" max="255" value="0" required/> . </td>
+              <td><input id="ip4" name="ip4" class="ip-control" type="number" min="0" max="255" value="0" required/>   </td>
+              <td><input id="shuffle" class="btn btn-primary" type="button" value="&#8635;"/></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/nouns.js"></script>
+  <script src="js/verbs.js"></script>
+  <script src="js/adjectives.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
