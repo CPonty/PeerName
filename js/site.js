@@ -69,7 +69,7 @@ function bind() {
 }
 
 //Wait for user IP
-$.getJSON('http://jsonip.com', function(data) {
+$.getJSON('https://jsonip.com', function(data) {
 	console.log(data.ip);
 	dom.ip.innerHTML = data.ip;
 	
